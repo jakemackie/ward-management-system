@@ -1,5 +1,5 @@
 <template>
-  <div>
-    <p class="text-4xl">Hello world</p>
+  <div class="min-h-screen grid place-items-center">
+    <p>Not much to see here...</p>
   </div>
 </template>
