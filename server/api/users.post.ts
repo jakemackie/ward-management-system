@@ -10,7 +10,7 @@ export default defineEventHandler(async (event) => {
     await prisma.user
       .create({
         data: {
-          name: "Test user",
+          name: body.name,
         },
       })
       .then((response) => {
