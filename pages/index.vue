@@ -1,5 +1,11 @@
 <template>
-  <div class="min-h-screen grid place-items-center">
-    <p>Nothing to see here...</p>
-  </div>
+  <Sidebar> </Sidebar>
+  <AppContainer>
+    <h1>Hello, world!</h1>
+  </AppContainer>
 </template>
+
+<script setup lang="ts">
+import AppContainer from "@/components/AppContainer.vue";
+import Sidebar from "@/components/Sidebar.vue";
+</script>

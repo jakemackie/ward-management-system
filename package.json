@@ -18,6 +18,8 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.11.4",
+    "prettier": "3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.12",
     "prisma": "^5.10.2"
   }
 }
