@@ -1,3 +1,3 @@
 <template>
-  <AppContainer />
+  <div>Beds</div>
 </template>
