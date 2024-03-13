@@ -1,5 +1,5 @@
 <template>
-  <li
+  <div
     :class="[
       'border relative mx-auto flex w-fit cursor-pointer items-center justify-center overflow-clip rounded-lg p-3 text-zinc-900',
       { 'hover:text-zinc-500': !active },
@@ -8,7 +8,7 @@
     ]"
   >
     <slot></slot>
-  </li>
+  </div>
 </template>
 
 <script>

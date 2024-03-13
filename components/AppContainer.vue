@@ -4,3 +4,18 @@
     <Content />
   </div>
 </template>
+
+<script setup lang="ts">
+useHead({
+  htmlAttrs: {
+    lang: 'en',
+  },
+  title: 'Dashboard',
+  meta: [
+    {
+      name: 'description',
+      content: 'Dashboard page',
+    },
+  ],
+})
+</script>
