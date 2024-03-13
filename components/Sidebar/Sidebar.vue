@@ -2,7 +2,7 @@
   <nav class="w-full md:min-h-screen md:w-24 border-b md:border-r lg:w-72">
     <ul class="flex md:flex-col justify-center space-x-2 md:space-x-0 md:space-y-2 py-2 md:py-10">
       <li>
-        <NuxtLink to="/">
+        <NuxtLink to="/" aria-label="Home">
           <SidebarItem :active="isActive('/')">
             <SidebarButton>
               <Icon name="ph:house-fill" />
@@ -13,7 +13,7 @@
       </li>
 
       <li>
-        <NuxtLink to="/beds">
+        <NuxtLink to="/beds" aria-label="Beds">
           <SidebarItem :active="isActive('/beds')">
             <SidebarButton>
               <Icon name="ph:bed-fill" />
