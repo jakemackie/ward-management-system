@@ -1,6 +1,6 @@
 <template>
-  <nav class="min-h-screen w-24 border-r lg:w-72">
-    <ul class="flex flex-col justify-center space-y-2 py-10">
+  <nav class="w-full md:min-h-screen md:w-24 border-b md:border-r lg:w-72">
+    <ul class="flex md:flex-col justify-center space-x-2 md:space-y-2 py-2 md:py-10">
       <NuxtLink to="/">
         <SidebarItem :active="isActive('/')">
           <SidebarButton>
