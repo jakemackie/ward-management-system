@@ -1,21 +1,26 @@
-import { PrismaClient } from "@prisma/client";
-
+import { PrismaClient, User } from "@prisma/client";
 const prisma = new PrismaClient();
 
-export default defineEventHandler(async (event) => {
-  const body = await readBody(event);
-  let user = null;
+interface Body {
+  name: string;
+}
 
-  if (body.name)
-    await prisma.user
-      .create({
+export default defineEventHandler(async (event) => {
+  const body: Body = await readBody(event);
+  let user: User | null = null;
+
+  if (body.name) {
+    try {
+      user = await prisma.user.create({
         data: {
           name: body.name,
         },
-      })
-      .then((response) => {
-        user = response;
       });
+    } catch (error) {
+      console.error("Error creating user:", error);
+    }
+  }
+
   return {
     user: user,
   };

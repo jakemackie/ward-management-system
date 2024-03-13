@@ -1,28 +1,30 @@
-import { PrismaClient } from "@prisma/client";
-
+import { PrismaClient, User } from "@prisma/client";
 const prisma = new PrismaClient();
 
-export default defineEventHandler(async (event) => {
-  const body = await readBody(event);
-  let user = null;
-  let error = null;
+interface Body {
+  id: number;
+}
 
-  if (body.id)
-    user = await prisma.user
-      .delete({
+export default defineEventHandler(async (event) => {
+  const body: Body = await readBody(event);
+  let user: User | null = null;
+  let error: any = null;
+
+  if (body.id) {
+    try {
+      user = await prisma.user.delete({
         where: {
           id: body.id,
         },
-      })
-      .then((response) => {
-        user = response;
-      })
-      .catch(async (e) => {
-        error = e;
       });
+    } catch (e) {
+      error = e;
+    }
+  }
 
-  if (error)
+  if (error) {
     return createError({ statusCode: 500, statusMessage: "Server Error" });
+  }
 
   return user;
 });
