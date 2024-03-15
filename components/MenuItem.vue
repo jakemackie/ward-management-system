@@ -1,8 +1,16 @@
 <template>
-    <li class="p-2 size-12 cursor-pointer">
-        <NuxtLink :to="page" class="size-full" :aria-label="altText">
-            <Icon :name="icon" class="size-full" color="#222222" />
+    <li class="w-fit cursor-pointer p-3 hover:bg-gray-100 rounded-lg">
+        <NuxtLink :to="href" class="flex justify-start items-center space-x-2" aria-label="Navigation icon">
+            <div class="ml-2">
+                <Icon :name="icon" color="#222222" class="size-8" />
+            </div>
+            <div class="w-full flex justify-center">
+                <span class="hidden md:block text-lg px-2">
+                    <slot></slot>
+                </span>
+            </div>
         </NuxtLink>
+            
     </li>
 </template>
 
@@ -12,13 +20,9 @@ defineProps({
         type: String,
         required: true,
     },
-    page: {
+    href: {
         type: String,
         required: true,
-    },
-    altText: {
-        type: String,
-        default: '',
     },
 });
 </script>
