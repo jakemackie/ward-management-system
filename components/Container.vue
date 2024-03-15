@@ -6,7 +6,7 @@
         <div class="sidebar">
             <Sidebar />
         </div>
-        <div class="main-content">
+        <div class="main-content px-4 py-10">
             <NuxtPage />
         </div>
     </div>

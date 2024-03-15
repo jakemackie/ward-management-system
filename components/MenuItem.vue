@@ -1,5 +1,5 @@
 <template>
-    <li class="w-fit cursor-pointer p-3 hover:bg-gray-100 rounded-lg">
+    <li class="w-fit cursor-pointer p-2 md:p-3 hover:bg-gray-100 bg-gray-100 rounded-lg" :class="{ 'bg-transparent': !isActive() }">
         <NuxtLink :to="href" class="flex justify-start items-center space-x-2" aria-label="Navigation icon">
             <div class="ml-2">
                 <Icon :name="icon" color="#222222" class="size-8" />
@@ -10,12 +10,14 @@
                 </span>
             </div>
         </NuxtLink>
-            
     </li>
 </template>
 
 <script setup lang="ts">
-defineProps({
+import { useRoute } from 'vue-router';
+import { defineProps } from '@vue/runtime-core';
+
+const props = defineProps({
     icon: {
         type: String,
         required: true,
@@ -25,4 +27,12 @@ defineProps({
         required: true,
     },
 });
+
+const route = useRoute();
+
+const isActive = () => {
+    if (route.path === props.href) {
+        return true;
+    }
+};
 </script>
