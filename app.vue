@@ -1,3 +1,3 @@
 <template>
-  <AppContainer />
+  <Container />
 </template>
