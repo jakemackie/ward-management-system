@@ -16,6 +16,7 @@
     * {
         margin: 0;
         padding: 0;
+        font-family: 'Inter', sans-serif;
     }
 
     .container {
@@ -26,6 +27,8 @@
     }
 
     .navbar {
+        width: 100%;
+        height: 100%;
         display: none;
     }
 
@@ -41,18 +44,18 @@
 
     @media (min-width: 769px) {
         .container {
-        grid-template-columns: 250px 1fr; 
+            grid-template-columns: 250px 1fr; 
         }
     
         .navbar {
-        display: none;
+            display: none;
         }
     }  
 
     @media (max-width: 768px) {
         .container {
             grid-template-columns: 1fr;
-            grid-template-rows: auto 1fr;
+            grid-template-rows: 4rem 1fr;
         }
 
         .navbar {
