@@ -18,55 +18,49 @@
         padding: 0;
     }
 
-    /* Base styles for container */
     .container {
         display: grid;
-        grid-template-columns: auto 1fr; /* Sidebar takes up auto width, main content takes up remaining space */
-        height: 100vh; /* Full viewport height */
-        overflow: hidden; /* Hide overflow */
+        grid-template-columns: auto 1fr;
+        height: 100vh;
+        overflow: hidden;
     }
 
-    /* Styles for navbar */
     .navbar {
-        display: none; /* Initially hide the navbar */
+        display: none;
     }
 
-    /* Styles for sidebar */
     .sidebar {
         width: 100%;
         height: 100%;
     }
 
-    /* Styles for main content */
     .main-content {
         width: 100%;
         height: 100%;
     }
 
-  /* Media query for desktop layout */
     @media (min-width: 769px) {
         .container {
-        grid-template-columns: 250px 1fr; /* Adjust sidebar width for desktop */
+        grid-template-columns: 250px 1fr; 
         }
     
         .navbar {
-        display: none; /* Hide navbar for desktop */
+        display: none;
         }
     }  
 
-  /* Media query for mobile layout */
     @media (max-width: 768px) {
         .container {
-            grid-template-columns: 1fr; /* Single column layout for mobile */
-            grid-template-rows: auto 1fr; /* Sticky navbar takes up auto height, main content takes up remaining space */
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr;
         }
 
         .navbar {
-            display: block; /* Show navbar for mobile */
+            display: block;
         }
 
         .sidebar {
-            display: none; /* Hide sidebar on mobile */
+            display: none;
         }
     }
 </style>
