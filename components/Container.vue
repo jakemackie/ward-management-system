@@ -48,9 +48,9 @@ body {
     display: none;
 }
 .content {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-inline: auto;
     padding: 1rem;
 }
