@@ -33,7 +33,6 @@ body {
 }
 
 .sidebar {
-    background-color: var(--secondary-color);
     min-height: 100vh;
     min-width: 250px;
     padding-block: 2rem;
@@ -41,10 +40,11 @@ body {
 
 }
 .navbar {
-    background-color: var(--secondary-color);
     min-width: 100vw;
 }
-.sidebar, .navbar {
+.sidebar, 
+.navbar {
+    background-color: var(--secondary-color);
     display: none;
 }
 .content {
