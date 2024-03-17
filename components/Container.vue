@@ -41,7 +41,7 @@
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .navbar {
         display: none;
     }
