@@ -19,13 +19,13 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
-    color: #e5eaf4;
+    color: #222222;
 }
 
 :root {
-    --primary-color: #404756;
-    --secondary-color: #3b414e;
-    --tertiary-color: #565f71;
+    --primary-color: #efefef;
+    --secondary-color: #dddddd;
+    --tertiary-color: #cdcdcd;
 }
 
 body {
