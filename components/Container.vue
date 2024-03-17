@@ -14,11 +14,31 @@
 </template>
 
 <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: #e5eaf4;
+}
+
+:root {
+    --primary-color: #404756;
+    --secondary-color: #3b414e;
+    --tertiary-color: #565f71;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
 .sidebar {
+    background-color: var(--secondary-color);
     min-height: 100vh;
     min-width: 250px;
 }
 .navbar {
+    background-color: var(--secondary-color);
     min-width: 100vw;
 }
 .sidebar, .navbar {

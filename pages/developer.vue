@@ -1,11 +1,11 @@
 <template>
     <div>
-        <div v-if="responseData" class="bg-gray-100 p-2 rounded-lg">
+        <Card v-if="responseData">
             <pre>{{ responseData }}</pre>
-        </div>
-        <div v-else class="animate-pulse bg-gray-100 p-2 rounded-lg">
+        </Card>
+        <Card v-else class="animate-pulse">
             <p class="animate-pulse">Fetching Data...</p>
-        </div>
+        </Card>
     </div>
 </template>
 
