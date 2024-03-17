@@ -1,5 +1,7 @@
 <template>
-  <Container />
+  <div class="min-h-screen">
+    <Container />
+  </div>
 </template>
 
 <script setup lang="ts">
