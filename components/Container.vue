@@ -36,6 +36,9 @@ body {
     background-color: var(--secondary-color);
     min-height: 100vh;
     min-width: 250px;
+    padding-block: 2rem;
+    padding-inline: 1rem;
+
 }
 .navbar {
     background-color: var(--secondary-color);
@@ -67,6 +70,12 @@ body {
     }
     .sidebar {
         display: flex;
+    }
+    .content {
+        max-width: 50%;
+    }
+    .content > * {
+        margin-top: 1rem;
     }
 }
 

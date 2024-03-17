@@ -1,5 +1,5 @@
 <template>
-    <li class="w-fit md:w-full cursor-pointer p-2 md:p-3 hover:bg-[var(--tertiary-color)] bg-[var(--tertiary-color)] rounded-lg" :class="{ 'bg-[var(--primary-color)]': !isActive() }">
+    <li class="w-fit md:w-full cursor-pointer p-2 md:p-3 hover:bg-[var(--primary-color)] bg-[var(--tertiary-color)]  rounded-lg" :class="{ 'bg-[var(--secondary-color)]': !isActive() }">
         <NuxtLink :to="href" class="flex justify-start items-center space-x-2" aria-label="Navigation icon">
             <div class="ml-2">
                 <Icon :name="icon" color="#222222" class="size-8" />
