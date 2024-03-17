@@ -33,11 +33,12 @@ body {
 }
 
 .sidebar {
+    position: relative;
     min-height: 100vh;
     min-width: 250px;
     padding-block: 2rem;
     padding-inline: 1rem;
-
+    flex-shrink: 0; /* Add this line */
 }
 .navbar {
     min-width: 100vw;

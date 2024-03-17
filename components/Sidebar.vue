@@ -1,6 +1,6 @@
 <template>
     <!-- Full size of parent -->
-    <div class="size-full">
+    <div class="size-full fixed w-fit">
         <ul class="w-full flex flex-col space-y-4">
             <MenuItem icon="material-symbols:bed" href="/">Manage Beds</MenuItem>
             <MenuItem icon="material-symbols:user-attributes" href="/patients">Patient Details</MenuItem>
