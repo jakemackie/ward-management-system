@@ -1,13 +1,17 @@
 <template>
-    <div>
-        <Card v-if="responseData">
-            <pre>{{ responseData }}</pre>
-        </Card>
-        <Card v-else class="animate-pulse">
-            <p class="animate-pulse">Fetching Data...</p>
-        </Card>
+    <div class="text-left space-y-4">
+        <h1 class="text-3xl font-semibold">API Response</h1>
+        <div class="*:text-lg space-y-2">
+            <div v-if="responseData">
+                <pre>{{ responseData }}</pre>
+            </div>
+            <div v-else class="animate-pulse">
+                <p>Loading...</p>
+            </div>
+        </div>
     </div>
 </template>
+
 
 <script setup>
     import { ref, onMounted } from 'vue';
