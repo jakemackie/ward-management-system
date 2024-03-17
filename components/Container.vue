@@ -21,15 +21,14 @@
 
     .container {
         display: grid;
-        grid-template-columns: auto 1fr;
-        height: 100vh;
-        overflow: hidden;
+        grid-template-columns: 1fr 1fr;
+        min-height: 100vh;
+        width: 100%;
     }
 
     .navbar {
         width: 100%;
         height: 100%;
-        display: none;
     }
 
     .sidebar {
@@ -38,13 +37,17 @@
     }
 
     .main-content {
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        margin-inline: auto;
         width: 100%;
-        height: 100%;
-    }
+        min-height: 100%;
+}
 
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
         .container {
-            grid-template-columns: 250px 1fr; 
+            grid-template-columns: 1fr; 
         }
     
         .navbar {

@@ -17,7 +17,7 @@
 
     onMounted(async () => {
         // Wait 1 second to avoid stressing the API
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        await new Promise(resolve => setTimeout(resolve, 1000));
         
         const config = useRuntimeConfig();
         try {

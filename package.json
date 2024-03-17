@@ -11,7 +11,6 @@
     "migrate": "prisma migrate dev"
   },
   "dependencies": {
-    "@dicebear/collection": "^7.1.1",
     "@dicebear/core": "^7.1.1",
     "@nuxtjs/axios": "^5.13.6",
     "@prisma/client": "^5.10.2",
@@ -27,8 +26,6 @@
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/tailwindcss": "^6.11.4",
     "nuxt-icon": "^0.6.9",
-    "prettier": "3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.12",
     "prisma": "^5.10.2"
   }
 }
