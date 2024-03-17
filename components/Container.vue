@@ -21,7 +21,7 @@
 
     .container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto 1fr;
         min-height: 100vh;
         width: 100%;
     }
@@ -47,7 +47,7 @@
 
     @media (min-width: 768px) {
         .container {
-            grid-template-columns: 1fr; 
+            grid-template-columns: 250px 1fr; 
         }
     
         .navbar {
