@@ -27,9 +27,9 @@
 }
 
 :root {
-    --primary-color: #efefef;
-    --secondary-color: #dddddd;
-    --tertiary-color: #cdcdcd;
+    --primary-color: #f1f5f9;
+    --secondary-color: #e2e8f0;
+    --tertiary-color: #cbd5e1;
 }
 
 body {
