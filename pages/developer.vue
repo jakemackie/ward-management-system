@@ -1,7 +1,7 @@
 <template>
     <div class="text-center">
-        <h2>API Response</h2>
-        <div>
+        <h1>API Response</h1>
+        <div class="flex justify-center text-left">
             <div v-if="responseData">
                 <pre>{{ responseData }}</pre>
             </div>
