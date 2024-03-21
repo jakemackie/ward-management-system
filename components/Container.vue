@@ -15,6 +15,10 @@
 
 <style>
 
+
+/* Global styles */
+/* Elements */
+
 * {
     margin: 0;
     padding: 0;
@@ -53,6 +57,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-inline: auto;
+    text-align: left;
     padding: 1rem;
 }
 
@@ -79,5 +84,13 @@ body {
         margin-top: 1rem;
     }
 }
+
+/* Typography */
+
+h1 { @apply text-[48px] font-extrabold text-[#0F172A]; }
+h2 { @apply text-[36px] font-extrabold text-[#0F172A]; }
+h3 { @apply text-[24px] font-extrabold text-[#0F172A]; }
+h4 { @apply text-[20px] font-extrabold text-[#0F172A]; }
+p  { @apply text-[16px] font-normal text-[#0F172A];}
 
 </style>

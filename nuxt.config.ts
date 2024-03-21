@@ -17,6 +17,14 @@ export default defineNuxtConfig({
     },
   },
 
+  tailwindcss: {
+    config: {
+      theme: {
+        extend: {  },
+      },
+    },
+  },
+
   nitro: {
     compressPublicAssets: true,
   },

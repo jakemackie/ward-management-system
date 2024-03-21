@@ -1,7 +1,7 @@
 <template>
-    <div class="text-left space-y-4">
-        <h1 class="text-3xl font-semibold">API Response</h1>
-        <div class="*:text-lg space-y-2">
+    <div>
+        <h2>API Response</h2>
+        <div>
             <div v-if="responseData">
                 <pre>{{ responseData }}</pre>
             </div>
