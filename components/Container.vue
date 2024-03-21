@@ -88,36 +88,38 @@ body {
 /* Typography */
 
 h1  {   
-        @apply 
-        text-[48px]     
-        text-[#0F172A]
-        font-extrabold;  
-        
+    @apply 
+    text-[36px]
+    md:text-[48px]
+    text-[#0F172A]
+    font-extrabold;  
 }
 h2  {    
-        @apply 
-        text-[36px] 
-        text-[#0F172A]    
-        font-extrabold;  
-         
+    @apply 
+    text-[24px]
+    md:text-[36px] 
+    text-[#0F172A]    
+    font-extrabold;  
 }
 h3  {    
-        @apply 
-        text-[24px]     
-        text-[#0F172A]
-        font-extrabold;   
-    }
+    @apply 
+    text-[20px]
+    md:text-[24px]     
+    text-[#0F172A]
+    font-extrabold;   
+}
 h4  {    
-        @apply 
-        text-[20px]     
-        text-[#0F172A]
-        font-extrabold;  
+    @apply 
+    text-[18px]
+    md:text-[20px]     
+    text-[#0F172A]
+    font-extrabold;  
 }
 p   {    
-        @apply 
-        text-[16px]  
-        text-[#0F172A]     
-        font-normal;
+    @apply 
+    text-[18px]
+    text-[#0F172A]     
+    font-normal;
 }
 
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="text-center">
         <h2>API Response</h2>
         <div>
             <div v-if="responseData">
