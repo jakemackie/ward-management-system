@@ -87,10 +87,37 @@ body {
 
 /* Typography */
 
-h1 { @apply text-[48px] font-extrabold text-[#0F172A]; }
-h2 { @apply text-[36px] font-extrabold text-[#0F172A]; }
-h3 { @apply text-[24px] font-extrabold text-[#0F172A]; }
-h4 { @apply text-[20px] font-extrabold text-[#0F172A]; }
-p  { @apply text-[16px] font-normal text-[#0F172A];}
+h1  {   
+        @apply 
+        text-[48px]     
+        text-[#0F172A]
+        font-extrabold;  
+        
+}
+h2  {    
+        @apply 
+        text-[36px] 
+        text-[#0F172A]    
+        font-extrabold;  
+         
+}
+h3  {    
+        @apply 
+        text-[24px]     
+        text-[#0F172A]
+        font-extrabold;   
+    }
+h4  {    
+        @apply 
+        text-[20px]     
+        text-[#0F172A]
+        font-extrabold;  
+}
+p   {    
+        @apply 
+        text-[16px]  
+        text-[#0F172A]     
+        font-normal;
+}
 
 </style>
